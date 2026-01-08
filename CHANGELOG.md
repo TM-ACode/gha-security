@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.1](https://github.com/entur/gha-security/compare/v2.10.0...v2.10.1) (2026-01-08)
+
+
+### Bug Fixes
+
+* add support for html as ignore_language workflow input value. ([#150](https://github.com/entur/gha-security/issues/150)) ([398c119](https://github.com/entur/gha-security/commit/398c11935754aed0f190023103ad46af16a7bf11))
+
 ## [2.10.0](https://github.com/entur/gha-security/compare/v2.9.2...v2.10.0) (2025-11-19)
 
 
