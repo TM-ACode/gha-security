@@ -7,6 +7,7 @@ jobs:
     actionlint:
       runs-on: ubuntu-latest
       steps:
+        - uses: actions/checkout@v6.0.2
         - uses: actions/checkout@v7.0.1
         - name: Check workflow files
           run: |
@@ -30,6 +31,7 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - name: Checkout
+              uses: actions/checkout@v6.0.2
               uses: actions/checkout@v7.0.1
             - name: Setup Biome
               uses: biomejs/setup-biome@v2

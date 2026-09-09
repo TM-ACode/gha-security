@@ -176,6 +176,7 @@ jobs:
       html_only_scan: ${{env.GHA_SECURITY_CODE_SCAN_HTML_ONLY_SCAN }}
     steps:
       - name: "Checkout repository"
+        uses: actions/checkout@v6.0.2
         uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
@@ -321,6 +322,7 @@ jobs:
         language: ${{ fromJson(needs.get-repository-metadata.outputs.semgrep_languages) }}
     steps:
       - name: "Checkout repository"
+        uses: actions/checkout@v6.0.2
         uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
@@ -412,6 +414,7 @@ jobs:
         language: ${{ fromJson(needs.get-repository-metadata.outputs.codeql_languages) }}
     steps:
       - name: "Checkout repository"
+        uses: actions/checkout@v6.0.2
         uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
@@ -510,6 +513,7 @@ jobs:
       pull-requests: write # required for creating comments on pull requests
     steps:
       - name: "Checkout repository"
+        uses: actions/checkout@v6.0.2
         uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
